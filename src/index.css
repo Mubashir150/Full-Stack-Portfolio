@@ -1,0 +1,665 @@
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  /* background: rgb(1, 11, 3);
+ 
+  background-repeat: repeat;
+  background-size: 30% 30%, 100% 100%; */
+  /* min-height: 110rem; */
+  background-image: url("/black-and-white-geometric-plexus-line-pattern-design-with-transparent-triangles-abstract-polygonal-futuristic-concept-vector.jpg");
+ 
+  background-color: rgba(12, 12, 12, 0.85);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  
+
+  
+  
+}
+
+
+header{
+  background-color: black;
+  height: 16vh;
+  
+}
+header #nav{
+  
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5%;
+  
+  
+}
+nav img{
+  height: 145px;
+  margin-top: -24px;
+  
+}
+
+nav ul {
+  display: flex;
+  gap: 11px;
+  list-style: none;
+  padding-top: 10px;
+}
+
+nav ul li button {
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.8); /* Glassmorphism effect */
+  padding: 13px 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(245, 248, 247, 0.5);
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px rgba(253, 254, 254, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.tech-icons {
+  text-align: center; /* This is the key for centering inline/inline-block images */
+  display: flex; /* Use flexbox for better control over image spacing and wrapping */
+  flex-wrap: wrap; /* Allows images to wrap to the next line */
+  justify-content: center; /* Centers items horizontally within the flex container */
+  align-items: center; /* Centers items vertically (if they have different heights) */
+  gap: 20px; /* Space between the images */
+  padding: 10px; /* Some padding around the icons */
+}
+
+.tech-icons img {
+  width: 60px; /* Set a consistent size for your icons */
+  height: 60px; /* Set a consistent size for your icons */
+  object-fit: contain; /* Ensures the image is scaled to fit while maintaining aspect ratio */
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.tech-icons img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
+/* Neon Glow Effect on Hover */
+nav ul li button:hover {
+  background: rgba(93, 94, 93, 0.6);
+  box-shadow: 0 0 20px #f5f8f7;
+  transform: scale(1.05);
+}
+
+/* Active/Focusing Effect */
+nav ul li button:focus {
+  outline: none;
+  box-shadow: 0 0 20px #d0d4d2;
+}
+
+#home {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3%;
+  padding: 70px 20px;
+ 
+  /* backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.2); */
+}
+#home h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(145, 153, 151, 0.8), 0 0 20px rgba(134, 139, 138, 0.5);
+  animation: glow 1.5s infinite alternate;
+  margin-bottom: 15px;
+}
+#home h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: normal;
+  opacity: 0.9;
+  color: #dde5e3;
+}
+
+/* Paragraph Styling */
+#home p {
+  font-size: 16px;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+#home  button{
+  margin-top: 4%;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.8); /* Glassmorphism effect */
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(245, 248, 247, 0.5);
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px rgba(253, 254, 254, 0.3);
+  transition: all 0.3s ease-in-out;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+  
+}
+
+#home button:hover {
+  background: rgba(93, 94, 93, 0.9);
+  box-shadow: 0 0 20px #f5f8f7;
+  transform: scale(1.05);
+}
+
+/* Active/Focusing Effect */
+#home button:focus {
+  outline: none;
+  box-shadow: 0 0 20px #e6eae8;
+}
+
+#about {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2%;
+  padding: 70px 20px;
+ 
+  /* backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.2); */
+}
+
+.about-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #eef4f2; /* Neon Green */
+  
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.highlight {
+  color: #6c7070;
+  font-weight: bold;
+}
+
+.about-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  margin-top: 4%;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.8); /* Glassmorphism effect */
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(245, 248, 247, 0.5);
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px rgba(253, 254, 254, 0.3);
+  transition: all 0.3s ease-in-out;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: rgba(93, 94, 93, 0.9);
+  box-shadow: 0 0 20px #f5f8f7;
+  transform: scale(1.05);
+}
+
+#skills {
+  text-align: center;
+  color: white;
+  padding: 30px 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition: bottom 0.6s ease-in-out;
+}
+
+#h2-skills {
+  font-size: 2.5rem;
+ 
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10vh;
+}
+
+.skills-container {
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap; */
+  display: flex;  /* Enable flexbox */
+
+  flex-direction: row; /* Stack boxes vertically */
+  flex-wrap: wrap;
+
+
+  align-items: center;
+  
+  gap: 20px;
+}
+.sp{
+  text-align: center;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-bottom: 5vh;
+}
+
+.skill-card {
+  /* background: rgba(232, 237, 235, 0.1); */
+  border: 2px solid rgba(250, 254, 252, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(245, 249, 247, 0.5);
+
+  
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  list-style: none;
+  max-width: 800px; /* Example: set a max-width */
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+
+  
+
+  margin-bottom: 10vh;
+}
+.skill-card img{
+  height: 50vh;
+  border-radius: 30px;
+}
+
+.skill-card h3{
+  text-align: center;
+}
+#first {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vh;
+}
+
+#first {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 10vh;
+
+}
+#first p{
+  margin-top: 2vh;
+}
+#simg img{
+  height: 70vh;
+}
+
+#ugap li{
+  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+#tgap li{
+  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+#third h3{
+  margin-top: 2vh;
+}
+#second h3{
+  margin-top: 5vh;
+}
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #f0f1f1;
+  background: rgba(249, 252, 251, 0.1);
+}
+
+.skill-card h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.contact-container{
+  text-align: center;
+  margin-top: 20px;
+  padding: 70px 20px;
+}
+.contact-container p{
+  margin-top: 30px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  
+}
+#icon img{
+  height: 60px;
+  
+  border-radius: 60px;
+}
+#icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 10vh;
+}
+
+#icon img:hover{
+  background: rgba(61, 62, 61, 0.6);
+  box-shadow: 0 0 20px #f5f8f7;
+  transform: scale(1.05);
+}
+
+
+.about-container p{
+  margin-top: 5vh;
+}
+
+.projects-card{
+  color: #d0d4d2;
+  border: 2px solid rgba(250, 254, 252, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(245, 249, 247, 0.5);
+
+  width: 60vw;
+
+ 
+
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10vh;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-left: 5vw;
+  margin-right: 5vw;
+
+  text-align: center;
+  flex-wrap: wrap;
+
+}
+
+.projects-card img{
+  height: 300px;
+  border-radius: 30px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+
+}
+
+.projects-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #f0f1f1;
+  background: rgba(249, 252, 251, 0.1);
+}
+
+.projects-container{
+  display: flex;
+  justify-content: center;
+  
+  
+  
+}
+#projects h2{
+  text-align: center;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+}
+.projects-card button{
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.8); /* Glassmorphism effect */
+  padding: 13px 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(245, 248, 247, 0.5);
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px rgba(253, 254, 254, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.projects-card button:hover{
+  background: rgba(61, 62, 61, 0.6);
+  box-shadow: 0 0 20px #f5f8f7;
+  transform: scale(1.05);
+}
+
+#dialog-box{
+  border: none;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #131212;
+  position: fixed; /* Ensures it's positioned relative to the viewport */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  
+}
+
+
+#dialog-box::backdrop {
+  background: rgba(35, 34, 34, 0.9);
+}
+
+#dialog-box h2{
+  margin: 0 0 0.25rem 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+#dialog-box p{
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+#dialog-box button{
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.8); /* Glassmorphism effect */
+  padding: 13px 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(245, 248, 247, 0.5);
+  cursor: pointer;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px rgba(253, 254, 254, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#dialog-box button:hover{
+  background: rgba(61, 62, 61, 0.6);
+  box-shadow: 0 0 20px #f5f8f7;
+  transform: scale(1.05);
+}
+
+
+#dialog-box img{
+  border-radius: 30px;
+  height: 300px;
+}
+
+
+
+@media (max-width:750px){
+    header{
+      height: 9vh;
+    }
+    nav img{
+      height: 80px;
+      margin-left: -20px;
+      margin-top: 5px;
+    }
+    nav ul{
+      gap: 5px;
+    }
+    nav ul li button{
+      margin-top: 18px;
+    
+      padding: 7px 11px;
+     
+      font-size: 0.4rem;
+      margin-left: 0.6vw;
+    }
+    header #nav{
+      justify-content: flex-start;
+    }
+    .contact-container h2{
+      margin-left: 10vw;
+      margin-right: 10vw;
+      font-size: 2rem;
+
+    }
+    .contact-container p{
+      font-size: 1rem;
+      margin-left: 10vw;
+      margin-right:10vw;
+    }
+    #icon{
+      margin-right: 2vw;
+      gap: 20px;
+    }
+    #icon img{
+      height: 50px;
+    }
+    #home h1{
+      font-size: 30px;
+      margin-right: 6vw;
+      margin-left: 2vw;
+    }
+    #home h2{
+      font-size: 18px;
+      margin-right: 6vw;
+    }
+    #home p{
+      font-size: 16px;
+      margin-right: 6vw;
+    }
+    #home button{
+      margin-right: 6vw;
+    }
+    .about-container h2{
+      margin-right: 4vw;
+      font-size: 30px;
+    }
+    .about-container p{
+      margin-right: 4vw;
+      font-size: 20px;
+    }
+    .about-buttons{
+      margin-right: 4vw;
+    }
+    #projects h2{
+      margin-right: 4vw;
+      font-size: 30px;
+      margin-top: 4vh;
+    }
+    .projects-container{
+      flex-direction: column;
+      margin-left: 10vw;
+      
+    }
+    .projects-card{
+      width: 58vw;
+    }
+    .projects-card img{
+      margin-left: 0.7vw;
+    }
+    body{
+      background-repeat: repeat;
+    }
+    #dialog-box video{
+      width: 250px;
+      
+    }
+    #dialog-box{
+      
+      width: 70vw;
+      
+    }
+    #dialog-box p{
+      text-align: center;
+      font-size: 13px;
+    }
+    #dialog-box h2{
+      margin-right: -10px;
+      margin-bottom: 2vh;
+    }
+    #dialog-box button{
+      margin-left: 27vw;
+    }
+    #h2-skills{
+      margin-right: 5vw;
+    }
+    .sp{
+      margin-right: 5vw;
+      margin-left: 3vw;
+    }
+    .skill-card{
+      flex-direction: column;
+      margin-left: 5vw;
+    }
+    .skills-container{
+      
+      margin-right: 7vw;
+    }
+    .skill-card img{
+      margin-top: 2vh;
+      height: 150px;
+    }
+    #first{
+      margin-top: 1vh;
+    }
+    #simg img{
+      height: 350px;
+    }
+}
+
+
